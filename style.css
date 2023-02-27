@@ -1,0 +1,114 @@
+@charset "UTF-8";
+
+@font-face {
+    font-family: 'Roma';
+    src: url('fontes/Roman\ SD.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'Romanos';
+    src: url('fontes/ROMANUS.otf') format('opentype');
+}
+
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+:root {
+    --font-01: 'Roma';
+    --font-02:'Romanos';
+
+    --cor-00:#0D0D0D;
+    --cor-01:#262626;
+    --cor-02:#595959;
+    --cor-03:#8C8C8C;
+    --cor-04:#BFBFBF ;
+}
+
+body {
+    background-color: var(--cor-03);
+}
+
+header {
+    background-color: var(--cor-00);
+    color: var(--cor-03);
+    text-align: center;
+    padding-top: 10vh;
+    padding-bottom: 10vh;
+}
+
+header > h1 {
+    font-family: var(--font-01);
+    font-variant: small-caps;
+    font-size: 4.5vw;
+}
+
+header > p > a {
+    text-decoration: none;
+    color: var(--cor-03);
+}
+
+header > p > a:hover {
+    text-decoration: underline;
+}
+
+section {
+    padding-top: 10vh;
+    padding-bottom: 10vh;
+    padding-left: 3vw;
+    font-family: var(--font-02);
+    font-size: 3vw;
+    font-weight: bolder;
+    line-height: 50px
+}
+
+section.imagem-01 {
+    background-image: url(imagens/wallpaper-01.jpg);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+section.imagem-01 > p {
+    background-color: rgba(128, 128, 128, 0.232);
+    color: var(--cor-00);
+    min-width: 320px;
+    max-width: 700px;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+section.imagem-02 {
+    background-image: url(imagens/wallpaper-03.jpg);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+section.imagem-02 > p {
+    background-color: rgba(128, 128, 128, 0.232);
+    min-width: 320px;
+    max-width: 700px;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+footer {
+    background-color: var(--cor-00);
+    color: var(--cor-04);
+    padding: 10px;
+    text-align: center;
+    font-family: sans-serif;
+    font-size: 1.2em;
+}
+
+footer > p > a {
+    text-decoration: none;
+    color: var(--cor-04);
+}
+footer > p > a:hover {
+    text-decoration: underline;
+}
